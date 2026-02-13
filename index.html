@@ -7,53 +7,65 @@
         body {
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #5a001f, #800020, #4b0015);
-            font-family: 'Georgia', serif;
+            font-family: Georgia, serif;
             color: white;
+
+            background: linear-gradient(
+                rgba(0,0,0,0.75),
+                rgba(0,0,0,0.75)
+            ),
+            url("lily.jpg");
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
 
-        .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-            text-align: center;
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 50px;
+            padding: 80px 10%;
+            flex-wrap: wrap;
+        }
+
+        .section img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.6);
+        }
+
+        .text {
+            max-width: 450px;
+            font-size: 20px;
+            line-height: 1.8;
         }
 
         h1 {
-            font-size: 48px;
-            margin-bottom: 20px;
+            text-align: center;
+            font-size: 50px;
+            padding-top: 100px;
         }
 
-        p {
+        .intro {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
             font-size: 20px;
-            line-height: 1.8;
-            margin-bottom: 30px;
-        }
-
-        .highlight {
-            font-size: 22px;
-            font-weight: bold;
-            color: #ffd6e0;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 25px;
-            margin-top: 40px;
-        }
-
-        .gallery img {
-            width: 250px;
-            border-radius: 15px;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-            transition: transform 0.3s ease;
-        }
-
-        .gallery img:hover {
-            transform: scale(1.05);
+            padding: 20px;
         }
 
         iframe {
-            margin-top: 40px;
+            display: block;
+            margin: 60px auto;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>For You</h1>
+
+<d
