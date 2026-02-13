@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background: url("lily.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.hero {
+    padding: 100px 20px;
+    background: rgba(0,0,0,0.6);
+}
+
+.photo-section img {
+    width: 60%;
+    margin: 40px 0;
+    border-radius: 12px;
+}
