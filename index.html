@@ -1,66 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>For You</title>
+    <title>For You ❤️</title>
 
     <style>
         body {
             margin: 0;
-            background-image: url("lily.jpg");
-            background-size: cover;
-            background-position: center;
-            background-attachment: fixed;
-            font-family: Georgia, serif;
+            padding: 0;
+            background: linear-gradient(135deg, #5a001f, #800020, #4b0015);
+            font-family: 'Georgia', serif;
             color: white;
         }
 
-        /* dark overlay */
-        body::before {
-            content: "";
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.7);
-            z-index: -1;
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 60px 20px;
+            text-align: center;
         }
 
-        .hero {
-            text-align: center;
-            padding: 120px 20px;
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
         }
 
-        .section {
-            max-width: 800px;
-            margin: 120px auto;
-            text-align: center;
+        p {
+            font-size: 20px;
             line-height: 1.8;
-            font-size: 19px;
+            margin-bottom: 30px;
         }
 
-        img {
-            width: 60%;
-            max-width: 600px;
-            margin: 100px auto;
-            display: block;
-            border-radius: 14px;
+        .highlight {
+            font-size: 22px;
+            font-weight: bold;
+            color: #ffd6e0;
         }
-    </style>
-</head>
 
-<body>
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 40px;
+        }
 
-<section class="hero">
-    <h1 style="font-size:60px;">For You</h1>
+        .gallery img {
+            width: 250px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+            transition: transform 0.3s ease;
+        }
 
-    <p>
-        I didn’t plan this.
-        Somewhere between the quiet conversations,
-        the late replies, and the way you simply exist —
-        you became something important to me.
-        <br><br>
-        So I made something.
-        Just for you.
-    </p>
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
 
-    <iframe 
-        style="b
+        iframe {
+            margin-top: 40px;
